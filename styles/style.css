@@ -32,7 +32,7 @@
 .header__title {
   display: flex;
   position: relative;
-  font-weight: bold; /* тут возможно как-то полужирное сделать */
+  font-weight: bold;
   width: 730px;
   line-height: 96px;
   font-size: 102px;
@@ -55,6 +55,11 @@
 .header__link {
   color: #2f80ed;
   text-decoration: none;
+}
+
+.header__link:hover {
+  opacity: .7;
+  transition: opacity .4s;
 }
 
 .header__main-illustration {
@@ -83,7 +88,7 @@
 }
 
 .description {
-  padding: 100px;
+  padding-top: 100px;
 }
 
 .two-columns {
@@ -116,9 +121,9 @@
   display: inline-block;
 }
 
-.two-columns__paragraph:last-of-type{
+/* .two-columns__paragraph:last-of-type{
   margin-bottom: 0px;
-}
+} */
 
 .two-columns__span-accent {
   line-height: 34px;
@@ -180,7 +185,7 @@
 .feynman {
   background-color: #f2f2f2;
   position: relative;
-  padding: 100px;
+  padding-top: 100px;
   min-height: 790px;
 }
 
@@ -192,7 +197,7 @@
   font-weight: bold;
   margin: auto;
   position: relative;
-  z-index: 3;
+  z-index: 2;
 }
 
 .feynman__subtitle {
@@ -203,7 +208,7 @@
   margin: auto;
   margin-top: 70px;
   position: relative;
-  z-index: 2;
+  z-index: 1;
 }
 
 .feynman__link {
@@ -215,6 +220,12 @@
   font-weight: normal;
   color: #2f80ed;
   text-decoration: none;
+  z-index: 3;
+}
+
+.feynman__link:hover {
+  opacity: .7;
+  transition: opacity .4s;
 }
 
 .feynman__image {
@@ -223,7 +234,7 @@
   left: 0;
   bottom: 0;
   position: absolute;
-  z-index: 1;
+  z-index: 0;
 }
 
 .kaufman {
@@ -358,4 +369,9 @@
   line-height: 30px;
   font-size: 18px;
   font-weight: normal;
+}
+
+.footer__link:hover {
+  opacity: .7;
+  transition: opacity .4s;
 }
