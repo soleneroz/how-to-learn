@@ -17,6 +17,7 @@
   display: flex;
   justify-content: space-between;
   position: relative;
+  align-items: center;
 }
 
 .logo_place_header {
@@ -30,7 +31,7 @@
 }
 
 .header__title {
-  display: flex;
+  /* display: flex; */
   position: relative;
   font-weight: bold;
   width: 730px;
@@ -38,18 +39,21 @@
   font-size: 102px;
   align-items: center;
   z-index: 2;
-  left: 64px;
+  bottom: 30px;
+  margin: 0 0 0 64px;
+  align-self: center;
 }
 
 .header__subtitle {
   position: absolute;
   width: 388px;
-  left: 64px;
-  bottom: 30px;
   line-height: 25px;
   font-size: 18px;
   z-index: 4;
   font-weight: normal;
+  bottom: 30px;
+  left: 64px;
+  margin: 0;
 }
 
 .header__link {
@@ -96,13 +100,14 @@
   color: #2f80ed;
   width: 175px;
   margin-top: 0px;
+  margin-bottom: 0px;
   line-height: 1.2;
   font-size: 18px;
   font-weight: normal;
 }
 
 .two-columns__main-text {
-  width: 80px;
+  width: 80%;
   min-width: 784px;
 }
 
@@ -171,6 +176,7 @@
 
 .table__text {
   margin-bottom: 0px;
+  margin-top: 0px;
   line-height: 1.2;
   font-size: 18px;
   font-weight: normal;
@@ -341,6 +347,7 @@
   font-weight: normal;
   line-height: 30px;
   font-size: 18px;
+  margin-top: 0px;
 }
 
 .footer__list-item {
